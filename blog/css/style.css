@@ -67,6 +67,12 @@ header {
   border: 3px solid #58a6ff;
 }
 
+.myface img:hover {
+    transform: scale(1.2);
+    transition: 1s;
+
+}
+
 .name-pro h1 {
   font-size: 2rem;
   color: #58a6ff;

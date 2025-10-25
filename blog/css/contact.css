@@ -1,86 +1,87 @@
 /* Reset básico */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0d1117;
-  color: #c9d1d9;
-  line-height: 1.6;
-  padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    padding: 2rem;
 }
 
 /* Container */
 .container {
 
-max-width: 600px;
-margin: auto;
-background-color: #161b22;
-padding: 2rem;
-border-radius: 12px;
-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-text-align: center;
+    max-width: 600px;
+    margin: auto;
+    background-color: #161b22;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 /* Cabeçalho */
 header h1 {
-  font-size: 2rem;
-  color: #58a6ff;
-  margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #58a6ff;
+    margin-bottom: 2rem;
 }
 
 /* Contatos */
 main {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 main a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background-color: #21262d;
-  padding: 1rem;
-  border-radius: 10px;
-  color: #c9d1d9;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #21262d;
+    padding: 1rem;
+    border-radius: 10px;
+    color: #c9d1d9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 main a:hover {
-  background-color: #30363d;
-  transform: scale(1.03);
-  color: #58a6ff;
+    background-color: #30363d;
+    transform: scale(1.03);
+    color: #58a6ff;
 }
 
 main img {
-  width: 32px;
-  height: 32px;
+    width: 32px;
+    height: 32px;
 }
 
 footer {
-  margin-top: 3rem;
-  text-align: center;
+    margin-top: 3rem;
+    text-align: center;
 }
 
 .btn-voltar {
-  display: inline-block;
-  background-color: #58a6ff;
-  color: white;
-  text-decoration: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    background-color: #58a6ff;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 8px 0 #0056b3;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-.btn-voltar:hover {
-  background-color: #460340;
-  transform: scale(1.05);
+.btn-voltar:active {
+    transform: translateY(4px);
+    box-shadow: 0 4px 0 #0056b3;
 }
