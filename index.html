@@ -1,75 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Luiz Felipe Gregorio — Desenvolvedor de software.">
+    <meta name="theme-color" content="#060812">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="blog/css/base.css">
     <link rel="stylesheet" href="blog/css/style.css">
-    <link rel="shortcut icon" href="blog/img/blog.png" type="image/x-icon">
-    <title>My page</title>
+    <link rel="shortcut icon" href="blog/img/blog.png" type="image/png">
+    <title>Luiz Felipe Gregorio — Desenvolvedor de software</title>
 </head>
 <body>
-<div class="container" id="container">
-    <nav class="navegation">
-        <ul>
-            <li><a href="index.html">About </a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <button id="themeToggle" class="theme-toggle">🌙 Tema Escuro</button>
-            </li>
+<!-- Navbar -->
+<nav class="navbar" aria-label="Navegação principal">
+    <a class="brand" href="index.html">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Luiz Felipe</span>
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="contact.html">Contato</a></li>
+        <li>
+            <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema">🌙</button>
+        </li>
+    </ul>
+</nav>
 
-        </ul>
-    </nav>
-
-    <header>
-        <div class="myface">
-            <img src="blog/img/my%20face%20150px.png" alt="">
+<main class="container">
+    <!-- Hero -->
+    <header class="hero card reveal">
+        <div class="avatar">
+            <img src="blog/img/my%20face%20150px.png" alt="Foto de Luiz Felipe Gregorio">
         </div>
-        <div class="name-pro">
-            <h1>Luiz Felipe Gregorio</h1>
-            <h2>Desenvolvedor de software</h2>
+        <div class="hero-text">
+            <span class="status">Disponível para novas oportunidades</span>
+            <h1>Olá, sou <span class="gradient-text">Luiz Felipe</span></h1>
+            <p class="role">Desenvolvedor de software</p>
+            <div class="cta">
+                <a class="btn btn-primary" href="contact.html">Entrar em contato</a>
+                <a class="btn btn-ghost" href="https://github.com/LuizFelipeGG7" target="_blank"
+                   rel="noopener noreferrer">Ver GitHub</a>
+            </div>
         </div>
     </header>
-    <main>
-        <h3>About me</h3>
-        <section>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </section>
-        <h3>Education</h3>
-        <section>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </section>
-        <h3>Courses</h3>
-        <section>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </section>
-    </main>
-    <footer>
-        <a href="https://github.com/LuizFelipeGG7" target="_blank" rel="noopener noreferrer">
-            <img src="blog/img/github-svgrepo-com.svg" alt="github">
-            <p>Github</p>
-        </a>
-        <a href="https://www.linkedin.com/in/luiz-felipe-gregorio-gon%C3%A7alves-67a1b826b/ " target="_blank"
-           rel="noopener noreferrer">
-            <img src="blog/img/linkedin-1-svgrepo-com.svg" alt="linkedin">
-            <p>Linkedin</p>
-        </a>
+
+    <!-- Sobre -->
+    <section class="block reveal" id="sobre">
+        <div class="section-head">
+            <span class="eyebrow">Sobre mim</span>
+            <h2>Um pouco da minha jornada</h2>
+        </div>
+        <div class="card">
+            <p>
+                <!-- Edite este texto: fale sobre você em 3–5 linhas. -->
+                Sou desenvolvedor de software apaixonado por transformar ideias em
+                experiências web rápidas, acessíveis e agradáveis de usar. Gosto de
+                escrever código limpo, cuidar dos detalhes de interface e aprender
+                tecnologias novas a cada projeto. Este espaço reúne um pouco do que
+                venho construindo e estudando.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tecnologias -->
+    <section class="block reveal" id="tecnologias">
+        <div class="section-head">
+            <span class="eyebrow">Skills</span>
+            <h2>Tecnologias &amp; ferramentas</h2>
+        </div>
+        <div class="card">
+            <div class="tech-groups">
+                <div>
+                    <h3>Front-end</h3>
+                    <div class="chip-row">
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">JavaScript</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Ferramentas</h3>
+                    <div class="chip-row">
+                        <span class="chip">Git</span>
+                        <span class="chip">GitHub</span>
+                        <span class="chip">Intellij Idea</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Aprendendo</h3>
+                    <div class="chip-row">
+                        <span class="chip">React</span>
+                        <span class="chip">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section class="block reveal" id="projetos">
+        <div class="section-head">
+            <span class="eyebrow">Portfólio</span>
+            <h2>Projetos em destaque</h2>
+        </div>
+        <div class="projects">
+            <article class="card project-card">
+                <div class="thumb" aria-hidden="true">01</div>
+                <h3>Mapeamento de PCs</h3>
+                <p>Aplicação full-stack para cadastrar e catalogar os computadores de uma rede por
+                    IP, MAC e descrição, com API REST e operações de CRUD sobre um banco PostgreSQL.</p>
+                <div class="tags"><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+                <div class="links">
+                    <a href="https://github.com/LuizFelipeGG7/Mapeamento_PC" target="_blank" rel="noopener noreferrer">Repositório →</a>
+                </div>
+            </article>
+            <article class="card project-card">
+                <div class="thumb" aria-hidden="true">02</div>
+                <h3>Contador de Namoro</h3>
+                <p>Site com contador em tempo real (dias, horas, minutos e segundos), carrossel de
+                    fotos com transição suave e player de música integrado — tudo em JS puro.</p>
+                <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="links">
+                    <a href="https://github.com/LuizFelipeGG7/contador" target="_blank" rel="noopener noreferrer">Repositório →</a>
+                    <a href="https://euteamomuitomais.netlify.app" target="_blank" rel="noopener noreferrer">Demo →</a>
+                </div>
+            </article>
+            <article class="card project-card">
+                <div class="thumb" aria-hidden="true">03</div>
+                <h3>Sistema OO em Python</h3>
+                <p>Projeto acadêmico explorando Programação Orientada a Objetos — herança e
+                    associação — ao modelar as entidades de um sistema de saúde.</p>
+                <div class="tags"><span>Python</span><span>POO</span></div>
+                <div class="links">
+                    <a href="https://github.com/LuizFelipeGG7/Trabalho_Faculdade" target="_blank" rel="noopener noreferrer">Repositório →</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Outros repositórios -->
+    <section class="block reveal" id="repositorios">
+        <div class="section-head">
+            <span class="eyebrow">GitHub</span>
+            <h2>Outros repositórios</h2>
+        </div>
+        <div class="card">
+            <div class="repo-list" id="repoList" data-user="LuizFelipeGG7">
+                <p class="repo-state muted">Carregando repositórios…</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educação -->
+    <section class="block reveal" id="educacao">
+        <div class="section-head">
+            <span class="eyebrow">Formação</span>
+            <h2>Educação</h2>
+        </div>
+        <div class="card">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="dot" aria-hidden="true"></div>
+                    <div>
+                        <span class="period">2024 – 2028 · Cursando</span>
+                        <h3>Graduação em Engenharia de Software</h3>
+                        <p>Atualmente no 6º período, aprofundando desenvolvimento de software,
+                            lógica de programação, banco de dados e boas práticas de engenharia.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="dot" aria-hidden="true"></div>
+                    <div>
+                        <span class="period">2021 – 2023 · Concluído</span>
+                        <h3>Ensino Médio</h3>
+                        <p>Colégio Desor. — Palminópolis, GO.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos -->
+    <section class="block reveal" id="cursos">
+        <div class="section-head">
+            <span class="eyebrow">Certificações</span>
+            <h2>Cursos &amp; certificados</h2>
+        </div>
+        <div class="courses">
+            <article class="card course-card">
+                <h3>Nome do curso</h3>
+                <p class="issuer">Emissor · Ano</p>
+                <p>Uma linha sobre o que você aprendeu ou a carga horária.</p>
+            </article>
+            <article class="card course-card">
+                <h3>Nome do curso</h3>
+                <p class="issuer">Emissor · Ano</p>
+                <p>Uma linha sobre o que você aprendeu ou a carga horária.</p>
+            </article>
+            <article class="card course-card">
+                <h3>Nome do curso</h3>
+                <p class="issuer">Emissor · Ano</p>
+                <p>Uma linha sobre o que você aprendeu ou a carga horária.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="site-footer reveal">
+        <div class="socials">
+            <a href="https://github.com/LuizFelipeGG7" target="_blank" rel="noopener noreferrer">
+                <img src="blog/img/github-svgrepo-com.svg" alt="">
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/luiz-felipe-gregorio-gon%C3%A7alves-67a1b826b/" target="_blank"
+               rel="noopener noreferrer">
+                <img src="blog/img/linkedin-1-svgrepo-com.svg" alt="">
+                <span>LinkedIn</span>
+            </a>
+            <a href="contact.html">
+                <span>✉️ Contato</span>
+            </a>
+        </div>
+        <small>© <span id="year">2026</span> Luiz Felipe Gregorio · Feito com HTML, CSS e JavaScript.</small>
     </footer>
-</div>
+</main>
+
 <script src="blog/index.js"></script>
 </body>
 </html>
